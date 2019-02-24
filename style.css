@@ -81,7 +81,11 @@ header>h1
 	display: inline-block;
 	transition: all 0.3s ease;
 }
-
+.choice:hover{
+	cursor: pointer;
+	background-color: red;
+	
+}
 
 
 
