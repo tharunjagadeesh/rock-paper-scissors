@@ -30,8 +30,7 @@ function win(userChoice,computerChoice)
  computerScore_span.innerHTML=computerScore;
  const smallUserWord="user".fontsize(3).sub();
  const smallCompWord="comp".fontsize(3).sub();
- result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord}loses to ${converttoword(computerChoice)}${smallCompWord}.You Won 
-}
+ result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord}loses to ${converttoword(computerChoice)}${smallCompWord}.You Won`}
 function lose(userChoice,computerChoice)
 {
  computerScore++;
@@ -39,14 +38,14 @@ function lose(userChoice,computerChoice)
  computerScore_span.innerHTML=computerScore;
  const smallUserWord="user".fontsize(3).sub();
  const smallCompWord="comp".fontsize(3).sub();
- result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord}loses to ${converttoword(computerChoice)}${smallCompWord}.You LOST
+ result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord}loses to ${converttoword(computerChoice)}${smallCompWord}.You LOST`}
 }
 function draw(userChoice,computerChoice)
 {
  userScore++;
  userScore_span.innerHTML=userScore;
  computerScore_span.innerHTML=computerScore;
- result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord} draws with  ${converttoword(computerChoice)}${smallCompWord}.
+ result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord} draws with  ${converttoword(computerChoice)}${smallCompWord}.Draw `}
 }
 
 
@@ -83,3 +82,5 @@ function main(){
 	paper_div.addEventListener('click',function(){game("p");})
 	scissor_div.addEventListener('click',function(){game("s");})
 	}
+ 
+ main();
