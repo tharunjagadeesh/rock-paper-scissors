@@ -30,7 +30,7 @@ function win(userChoice,computerChoice)
  computerScore_span.innerHTML=computerScore;
  const smallUserWord="user".fontsize(3).sub();
  const smallCompWord="comp".fontsize(3).sub();
- result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord}loses to ${converttoword(computerChoice)}${smallCompWord}.You Won`}
+ result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord}  defeats  ${converttoword(computerChoice)}${smallCompWord}.You Won`}
 function lose(userChoice,computerChoice)
 {
  computerScore++;
@@ -42,7 +42,6 @@ function lose(userChoice,computerChoice)
 
 function draw(userChoice,computerChoice)
 {
- userScore++;
  userScore_span.innerHTML=userScore;
  computerScore_span.innerHTML=computerScore;
  result_p.innerHTML=`${converttoword(userChoice)}${smallUserWord} draws with  ${converttoword(computerChoice)}${smallCompWord}.Draw `}
